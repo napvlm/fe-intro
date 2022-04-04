@@ -1,0 +1,49 @@
+@import '../base/vars';
+
+section.hero-unit {
+  @include mobile-up {
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text {
+    max-width: 470px;
+
+    h1 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 45px;
+
+      @include mobile-only {
+        font-size: 24px;
+        line-height: 20px;
+      }
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+      color: $text-color;
+
+      &.pre-heading {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .media {
+    img {
+      max-width: 593px;
+    }
+
+    @include mobile-only {
+      margin-top: 24px;
+    }
+  }
+}

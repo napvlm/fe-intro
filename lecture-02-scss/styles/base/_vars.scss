@@ -1,0 +1,13 @@
+$primary: #FF9900;
+$heading-color: #263640;
+$text-color: #929A9F;
+$white: #FFFFFF;
+
+@mixin mobile-only {
+  @media (max-width: 390px) { @content }
+}
+
+@mixin mobile-up {
+  @media (min-width: 391px) { @content }
+}
+
